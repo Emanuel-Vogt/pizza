@@ -14,10 +14,11 @@
     --light-bg: #E0DBCA;
     --text-main: #121212;
     --text-muted: #4a4a4a;
-    --accent: rgb(252, 206, 0);
+    --accent: rgb(252, 0, 0);
     --border: #d8cfb8;
     --success: #25d366;
 }
+
 
 html {
     scroll-behavior: smooth;
@@ -83,16 +84,16 @@ body {
     font-weight: 700;
     color: var(--accent);
     text-decoration: none;
-    background: rgba(255, 183, 3, 0.12);
+    background: rgba(255, 3, 3, 0.12);
     padding: 6px 12px;
     border-radius: 20px;
-    border: 1px solid rgba(255, 183, 3, 0.25);
+    border: 1px solid rgba(255, 3, 3, 0.25);
 }
 
 .hero {
     min-height: 55vh;
-    background: radial-gradient(circle at center, rgba(160, 129, 68, 0.623) 0%, rgba(224, 214, 179, 0.808) 75%),
-                linear-gradient(rgba(231, 228, 214, 0.13), rgba(240, 239, 235, 0.95)),
+    background: radial-gradient(circle at center, rgba(160, 68, 68, 0.623) 0%, rgba(189, 182, 161, 0.884) 75%),
+                linear-gradient(rgba(231, 214, 214, 0.13), rgba(240, 239, 235, 0.95)),
                 url('https://images.unsplash.com/photo-1513104890138-7c749659a591?q=80&w=1200') center/cover no-repeat;
     display: flex;
     align-items: center;
@@ -104,7 +105,7 @@ body {
 .badge-hero {
     display: inline-block;
     background: rgba(230, 57, 70, 0.18);
-    color: var(--primary);
+    color: rgb(117, 0, 0);
     padding: 4px 12px;
     border-radius: 20px;
     font-size: 0.72rem;
@@ -442,7 +443,7 @@ body {
 
 .option-btn.selected {
     border-color: var(--primary);
-    background: #ddcc93;
+    background: #dd9393;
 }
 
 .modal-obs label {
@@ -454,7 +455,7 @@ body {
 
 .modal-obs input {
     width: 100%;
-    background: #eee3be;
+    background: #dd9393;
     border: 1px solid var(--border);
     color: var(--text-main);
     padding: 12px;
@@ -639,5 +640,16 @@ body {
     border-radius: 20px;
     font-weight: 800;
     font-size: 0.85rem;
+}
+
+.fidelity-banner {
+    color: rgb(255, 202, 68);
+    border: 1px dashed var(--accent);
+    padding: 10px 12px;
+    border-radius: 12px;
+    font-size: 0.78rem;
+    text-align: left;
+    line-height: 1.3;
+    border-color: rgb(255, 202, 68);
 }
 
