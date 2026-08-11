@@ -20,10 +20,9 @@ const defaultProducts = [
     { id: 12, num: "02", category: "pizzas-doces", type: "pizza", pizzaType: "doce", name: "Morango Supreme", desc: "Creme de avelã, chocolate ao leite, morangos frescos e leite em pó.", prices: { size25: 60, size35: 85, size30x50: 145 } },
     { id: 13, num: "03", category: "pizzas-doces", type: "pizza", pizzaType: "doce", name: "Prestígio", desc: "Creme de avelã, chocolate ao leite, coco ralado e leite condensado.", prices: { size25: 55, size35: 80, size30x50: 135 } },
     { id: 14, num: "04", category: "pizzas-doces", type: "pizza", pizzaType: "doce", name: "Banoffee", desc: "Doce de leite, banana, leite em pó e canela.", prices: { size25: 65, size35: 90, size30x50: 155 } },
-    { id: 15, num: "05", category: "pizzas-doces", type: "pizza", pizzaType: "doce", name: "Cookies & Cream", desc: "Chocolate branco, Oreo triturado e leite em pó.", prices: { size25: 65, size35: 90, size30x50: 155 } },
+    { id: 15, num: "05", category: "pizzas-doces", type: "pizza", pizzaType: "doce", name: "Oreo", desc: "Chocolate branco, Oreo triturado e leite em pó.", prices: { size25: 65, size35: 90, size30x50: 155 } },
 
     // XIS ARTESANAIS 18cm
-<<<<<<< HEAD
     { id: 16, num: "01", category: "xis-artesanais", type: "single", name: "X Salada", desc: "Hambúrguer artesanal de coxão mole, ovo frito, mussarela, alface, tomate, milho, ervilha, maionese, ketchup.", price: 30 },
     { id: 17, num: "02", category: "xis-artesanais", type: "single", name: "X Frango", desc: "Filé de frango, ovo frito, mussarela, alface, tomate, milho, ervilha, maionese, ketchup.", price: 32 },
     { id: 18, num: "03", category: "xis-artesanais", type: "single", name: "X Calabresa", desc: "Hambúrguer artesanal de coxão mole, calabresa fatiada, ovo frito, mussarela, alface, tomate, milho, ervilha, maionese, ketchup.", price: 35 },
@@ -40,23 +39,6 @@ const defaultProducts = [
     { id: 26, num: "03", category: "xis-calota", type: "single", name: "X Calota Calabresa", desc: "Pão de 30cm, hambúrguer artesanal de coxão mole, calabresa fatiada, ovo frito, mussarela, alface, tomate, milho, ervilha, maionese e ketchup.", price: 95 },
     { id: 27, num: "04", category: "xis-calota", type: "single", name: "X Calota Bacon", desc: "Pão de 30cm, hambúrguer artesanal de coxão mole, bacon, ovo frito, mussarela, alface, tomate, milho, ervilha, maionese e ketchup.", price: 95 },
     { id: 28, num: "05", category: "xis-calota", type: "single", name: "X Calota Tudo", desc: "Pão de 30cm, hambúrguer artesanal de coxão mole, filé de frango, bacon, calabresa, presunto, ovo frito, mussarela, alface, tomate, milho, ervilha, maionese e ketchup.", price: 110 },
-=======
-    { id: 16, num: "01", category: "xis-artesanais", type: "single", name: "X Salada", desc: "Hambúrguer artesanal de acém bovino, ovo frito, mussarela, alface, tomate, milho, ervilha, maionese, ketchup e mostarda.", price: 30 },
-    { id: 17, num: "02", category: "xis-artesanais", type: "single", name: "X Frango", desc: "Filé de frango, ovo frito, mussarela, alface, tomate, milho, ervilha, maionese, ketchup e mostarda.", price: 32 },
-    { id: 18, num: "03", category: "xis-artesanais", type: "single", name: "X Calabresa", desc: "Hambúrguer artesanal de acém bovino, calabresa fatiada, ovo frito, mussarela, alface, tomate, milho, ervilha, maionese, ketchup e mostarda.", price: 35 },
-    { id: 19, num: "04", category: "xis-artesanais", type: "single", name: "X Bacon", desc: "Hambúrguer artesanal de acém bovino, bacon, ovo frito, mussarela, alface, tomate, milho, ervilha, maionese, ketchup e mostarda.", price: 35 },
-    { id: 20, num: "05", category: "xis-artesanais", type: "single", name: "X Costela", desc: "Hambúrguer artesanal de acém bovino, costela desfiada, cheddar cremoso, ovo frito, mussarela, alface, tomate, milho, ervilha, maionese, ketchup e mostarda.", price: 40 },
-    { id: 21, num: "06", category: "xis-artesanais", type: "single", name: "X Frango Especial", desc: "Filé de frango, bacon, cheddar cremoso, Catupiry, ovo frito, mussarela, alface, tomate, milho, ervilha, maionese, ketchup e mostarda.", price: 40 },
-    { id: 22, num: "07", category: "xis-artesanais", type: "single", name: "X Tudo", desc: "Hambúrguer artesanal de acém bovino, filé de frango, bacon, calabresa, presunto, cheddar cremoso, ovo frito, mussarela, alface, tomate, milho, ervilha, maionese, ketchup e mostarda.", price: 45 },
-    { id: 23, num: "08", category: "xis-artesanais", type: "single", name: "X Maná Especial", desc: "2 hambúrgueres artesanais de acém bovino, bacon crocante, cheddar cremoso, Catupiry, cebola caramelizada, ovo frito, mussarela, alface, tomate, milho, ervilha, maionese, ketchup e mostarda.", price: 48 },
-
-    // XIS CALOTA 30cm
-    { id: 24, num: "01", category: "xis-calota", type: "single", name: "X Calota Salada", desc: "Pão de 30cm, hambúrguer artesanal de acém bovino, ovo frito, mussarela, alface, tomate, milho, ervilha, maionese e ketchup.", price: 85 },
-    { id: 25, num: "02", category: "xis-calota", type: "single", name: "X Calota Frango", desc: "Pão de 30cm, filé de frango, ovo frito, mussarela, alface, tomate, milho, ervilha, maionese e ketchup.", price: 85 },
-    { id: 26, num: "03", category: "xis-calota", type: "single", name: "X Calota Calabresa", desc: "Pão de 30cm, hambúrguer artesanal de acém bovino, calabresa fatiada, ovo frito, mussarela, alface, tomate, milho, ervilha, maionese e ketchup.", price: 95 },
-    { id: 27, num: "04", category: "xis-calota", type: "single", name: "X Calota Bacon", desc: "Pão de 30cm, hambúrguer artesanal de acém bovino, bacon, ovo frito, mussarela, alface, tomate, milho, ervilha, maionese e ketchup.", price: 95 },
-    { id: 28, num: "05", category: "xis-calota", type: "single", name: "X Calota Tudo", desc: "Pão de 30cm, hambúrguer artesanal de acém bovino, filé de frango, bacon, calabresa, presunto, ovo frito, mussarela, alface, tomate, milho, ervilha, maionese e ketchup.", price: 110 },
->>>>>>> 93825263928c75bd23c1754f8c12f107d4240755
 
     // PORÇÕES E BEBIDAS
     { id: 29, num: "", category: "porcoes", type: "single", name: "Batata Frita 400g", desc: "Porção de batata frita crocante (400g).", price: 20 },
@@ -73,11 +55,7 @@ const categoriesMeta = [
     { key: "pizzas-salgadas", label: "🍕 Pizzas Salgadas", sub: "Todas acompanham Borda Recheada!" },
     { key: "monte-sua-pizza", label: "🍕 Monte Sua Pizza", sub: "Escolha até 4 sabores diretamente!" },
     { key: "pizzas-doces", label: "🍫 Pizzas Doces", sub: "Com Bordas Doces Especiais!" },
-<<<<<<< HEAD
     { key: "xis-artesanais", label: "🍔 Xis Artesanais (18cm)", sub: "Hambúrguer 100% Coxão Mole" },
-=======
-    { key: "xis-artesanais", label: "🍔 Xis Artesanais (18cm)", sub: "Hambúrguer 100% Acém Bovino" },
->>>>>>> 93825263928c75bd23c1754f8c12f107d4240755
     { key: "xis-calota", label: "👑 Xis Calota (30cm)", sub: "Mais Recheio, Mais Sabor!" },
     { key: "porcoes", label: "🍟 Porções", sub: "" },
     { key: "bebidas", label: "🥤 Bebidas", sub: "" }
@@ -97,7 +75,7 @@ let products = defaultProducts;
 let cart = [];
 let currentProduct = null;
 let selectedSizeKey = "size25";
-let selectedBorda = "";
+let selectedBordas = [];
 let selectedFlavors = [];
 
 document.addEventListener('DOMContentLoaded', () => {
@@ -208,9 +186,8 @@ function openModal(productId) {
 
     if (currentProduct.type === 'pizza') {
         selectedSizeKey = "size25";
-        const isSalgada = currentProduct.pizzaType === 'salgada' || !currentProduct.pizzaType;
-        const bordaList = isSalgada ? bordasSalgadas : bordasDoces;
-        selectedBorda = bordaList[0];
+        const bordaList = [...bordasSalgadas, ...bordasDoces];
+        selectedBordas = [bordaList[0]];
 
         // 1. Tamanho
         let sizeHTML = '<div class="modal-group"><h4>1. Escolha o Tamanho:</h4>';
@@ -232,11 +209,13 @@ function openModal(productId) {
         }
 
         // 3. Borda
-        let bordaHTML = `<div class="modal-group"><h4>${currentProduct.isCustom ? '3.' : '2.'} Borda Recheada Inclusa:</h4>`;
+        const bordaLabel = currentProduct.isCustom ? '3.' : '2.';
+        const bordaTitle = currentProduct.isCustom ? 'Escolha até 2 Bordas Recheadas:' : 'Borda Recheada Inclusa:';
+        let bordaHTML = `<div class="modal-group"><h4>${bordaLabel} ${bordaTitle}</h4>`;
         bordaList.forEach((b, idx) => {
             bordaHTML += `
-                <button class="option-btn ${idx === 0 ? 'selected' : ''}" onclick="selectBorda('${b}', this)">
-                    <span>Borda de ${b}</span>
+                <button class="option-btn ${selectedBordas.includes(b) ? 'selected' : ''}" onclick="selectBorda('${b}', this)">
+                    <span>${currentProduct.isCustom ? b : `Borda de ${b}`}</span>
                     <small style="color:#25d366;font-weight:700;">Grátis</small>
                 </button>
             `;
@@ -261,10 +240,12 @@ function openModal(productId) {
 
 // Renderiza a lista de Sabores disponíveis
 function renderFlavorPicker() {
-    const isSalgada = currentProduct.pizzaType === 'salgada' || !currentProduct.pizzaType;
-    const catTarget = isSalgada ? 'pizzas-salgadas' : 'pizzas-doces';
-    
-    const availableFlavors = products.filter(p => p.category === catTarget && !p.isCustom);
+    const allowSweetFlavors = currentProduct.isCustom;
+    const availableFlavors = products.filter(p => {
+        if (p.isCustom) return false;
+        if (currentProduct.pizzaType === 'doce') return p.category === 'pizzas-doces';
+        return p.category === 'pizzas-salgadas' || (allowSweetFlavors && p.category === 'pizzas-doces');
+    });
     const sizeObj = pizzaSizes.find(s => s.key === selectedSizeKey);
     const max = sizeObj ? sizeObj.maxFlavors : 2;
 
@@ -336,8 +317,26 @@ function selectSize(key, btn) {
 }
 
 function selectBorda(borda, btn) {
-    selectedBorda = borda;
-    btn.parentElement.querySelectorAll('.option-btn').forEach(b => b.classList.remove('selected'));
+    if (!currentProduct?.isCustom) {
+        selectedBordas = [borda];
+        btn.parentElement.querySelectorAll('.option-btn').forEach(b => b.classList.remove('selected'));
+        btn.classList.add('selected');
+        return;
+    }
+
+    const isSelected = selectedBordas.includes(borda);
+    if (isSelected) {
+        selectedBordas = selectedBordas.filter(b => b !== borda);
+        btn.classList.remove('selected');
+        return;
+    }
+
+    if (selectedBordas.length >= 2) {
+        alert('Você pode selecionar no máximo 2 bordas.');
+        return;
+    }
+
+    selectedBordas.push(borda);
     btn.classList.add('selected');
 }
 
@@ -364,11 +363,12 @@ function addToCart() {
         finalPrice = currentProduct.prices[selectedSizeKey] || 0;
         const sz = pizzaSizes.find(s => s.key === selectedSizeKey);
         const szLabel = sz.label.split(' ')[0];
+        const bordaText = selectedBordas.length > 1 ? `Bordas: ${selectedBordas.join(' + ')}` : `Borda: ${selectedBordas[0] || ''}`;
         
         if (currentProduct.isCustom && selectedFlavors.length > 0) {
-            details = `${szLabel}, Sabores: ${selectedFlavors.join(' + ')}, Borda ${selectedBorda}`;
+            details = `${szLabel}, Sabores: ${selectedFlavors.join(' + ')}, ${bordaText}`;
         } else {
-            details = `${szLabel}, Borda ${selectedBorda}`;
+            details = `${szLabel}, ${bordaText}`;
         }
     } else {
         finalPrice = currentProduct.price || 0;
