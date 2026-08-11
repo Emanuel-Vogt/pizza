@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+    <title>Maná Pizza X | Delivery de Pizzas e Xis Artesanais</title>
+    
+    <!-- SEO Básico -->
+    <meta name="description" content="Maná Pizza X - As melhores pizzas com borda recheada inclusa, Xis artesanais de 18cm e Xis Calota de 30cm. Peça online rápido pelo WhatsApp!">
+    <meta name="keywords" content="pizza, delivery, xis artesanal, xis calota, maná pizza x, lanchonete, tele entrega">
+    <meta name="theme-color" content="#121212">
+    
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;600;700;800&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <!-- Header Fixo Mobile -->
+    <header class="header">
+        <img  src="logoMana.jpeg" alt="Logo Maná Pizza X" class="logo-img">
+        <div class="logo">Maná <span>Pizza X</span></div>
+        <a href="tel:55996575594" class="phone-badge">(55) 99657-5594</a>
+    </header>
+
+    <!-- Hero Section Mobile Optimistic -->
+    <section class="hero">
+        <div class="hero-content">
+            <span class="badge-hero">🔥 Delivery Oficial</span>
+            <h1>A melhor pizza & xis da cidade</h1>
+            <p>Pizzas com borda recheada inclusa, Xis de 18cm e Xis Calota de 30cm!</p>
+            <div class="fidelity-banner">
+                <span>⭐ <strong>Cartão Fidelidade:</strong> A cada R$ 90 = 1 fatia. Junte 10 e ganhe 1 pizza de 35cm!</span>
+            </div>
+        </div>
+    </section>
+
+    <!-- Navegação de Categorias Touch-Friendly (Barra Horizontal Deslizável) -->
+    <nav class="category-nav">
+        <div class="category-scroll" id="category-scroll"></div>
+    </nav>
+
+    <!-- Menu Principal -->
+    <main class="container" id="menu">
+        <div id="dynamic-sections"></div>
+    </main>
+
+    <!-- Modal de Customização / Adição de Produto Mobile-First -->
+    <div class="modal-overlay" id="modal-overlay" onclick="closeModalOnOverlay(event)">
+        <div class="modal">
+            <div class="modal-handle"></div>
+            <button class="modal-close" onclick="closeModal()">&times;</button>
+            <h3 id="modal-title">Produto</h3>
+            <p id="modal-desc" class="modal-desc"></p>
+
+            <div class="modal-options" id="modal-options"></div>
+
+            <div class="modal-obs">
+                <label for="item-obs">Observações (ex: sem cebola, maionese à parte):</label>
+                <input type="text" id="item-obs" placeholder="Escreva se tiver alguma preferência...">
+            </div>
+
+            <div class="modal-footer">
+                <div class="modal-price-box">
+                    <span class="modal-price-label">Total</span>
+                    <div class="modal-price" id="modal-total-price">R$ 0,00</div>
+                </div>
+                <button class="btn-primary btn-add-cart" id="btn-add-modal">Adicionar ao Pedido</button>
+            </div>
+        </div>
+    </div>
+
+    <!-- Carrinho Lateral / Bottom Sheet para Mobile -->
+    <div class="cart-overlay" id="cart-overlay" onclick="toggleCart()"></div>
+    <aside class="cart-sidebar" id="cart-sidebar">
+        <div class="cart-header">
+            <h3> Seu Pedido</h3>
+            <button class="cart-close" onclick="toggleCart()">&times;</button>
+        </div>
+
+        <div class="cart-items" id="cart-items"></div>
+
+        <div class="cart-footer">
+            <div class="cart-summary">
+                <div class="cart-total-row">
+                    <span>Total do Pedido:</span>
+                    <span id="cart-total-price">R$ 0,00</span>
+                </div>
+                <div class="fidelity-alert" id="fidelity-alert">
+                    🎁 Adicione itens para acumular no Cartão Fidelidade!
+                </div>
+            </div>
+
+            <form id="checkout-form" class="checkout-form">
+                <input type="text" id="cust-name" placeholder="Seu Nome Completo *" required autocomplete="name">
+                <input type="text" id="cust-address" placeholder="Endereço de Entrega (Rua, Nº, Bairro) *" required autocomplete="street-address">
+                <select id="cust-payment" required>
+                    <option value="" disabled selected>Forma de Pagamento *</option>
+                    <option value="Dinheiro">Dinheiro</option>
+                    <option value="Pix">Pix</option>
+                    <option value="Cartão de Crédito">Cartão de Crédito</option>
+                    <option value="Cartão de Débito">Cartão de Débito</option>
+                </select>
+                <input type="text" id="cust-change" placeholder="Troco para quanto?" style="display:none;">
+                <button type="submit" class="btn-primary btn-block btn-whatsapp">
+                     Enviar Pedido no WhatsApp
+                </button>
+            </form>
+        </div>
+    </aside>
+
+    <!-- Barra de Ação Flutuante Mobile Fixo na Parte Inferior -->
+    <div class="mobile-bottom-bar" id="mobile-bottom-bar" onclick="toggleCart()">
+        <div class="cart-bar-info">
+            <span class="cart-bar-count"><span id="cart-count">0</span> item(ns)</span>
+            <span class="cart-bar-total" id="cart-bar-total-price">R$ 0,00</span>
+        </div>
+        <button class="cart-bar-btn">Ver Carrinho 🛒</button>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
