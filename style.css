@@ -10,12 +10,21 @@
     --primary: #e63946;
     --primary-hover: #d62828;
     --dark: #121212;
+<<<<<<< HEAD
     --card-bg: #f6efe1;
     --light-bg: #E0DBCA;
     --text-main: #2f2a22;
     --text-muted: #6f675c;
     --accent: #b66a00;
     --border: #d8cfb8;
+=======
+    --card-bg: #1c1c1e;
+    --light-bg: #0d0d0d;
+    --text-main: #f1f1f1;
+    --text-muted: #a0a0a0;
+    --accent: #ffb703;
+    --border: #2c2c2e;
+>>>>>>> 93825263928c75bd23c1754f8c12f107d4240755
     --success: #25d366;
 }
 
@@ -37,7 +46,11 @@ body {
     position: fixed;
     top: 0; left: 0; right: 0;
     height: 56px;
+<<<<<<< HEAD
     background: rgba(246, 239, 225, 0.96);
+=======
+    background: rgba(18, 18, 18, 0.95);
+>>>>>>> 93825263928c75bd23c1754f8c12f107d4240755
     backdrop-filter: blur(12px);
     -webkit-backdrop-filter: blur(12px);
     display: flex;
@@ -50,6 +63,7 @@ body {
 
 .logo {
     font-size: 1.25rem;
+<<<<<<< HEAD
     display: flex;
     align-items: center;
     gap: 0.2rem;
@@ -58,10 +72,16 @@ body {
     letter-spacing: -0.7px;
     justify-content: center;
     line-height: 1;
+=======
+    font-weight: 800;
+    color: #fff;
+    letter-spacing: -0.5px;
+>>>>>>> 93825263928c75bd23c1754f8c12f107d4240755
 }
 
 .logo span { color: var(--primary); }
 
+<<<<<<< HEAD
 .logo-img {
     position: fixed;
     top: 0.10rem;
@@ -75,6 +95,8 @@ body {
     object-fit: contain;
     box-shadow: 0 2px 8px rgba(0,0,0,0.2);
 }
+=======
+>>>>>>> 93825263928c75bd23c1754f8c12f107d4240755
 
 .phone-badge {
     font-size: 0.78rem;
@@ -89,8 +111,13 @@ body {
 
 .hero {
     min-height: 55vh;
+<<<<<<< HEAD
     background: radial-gradient(circle at center, rgba(218, 216, 212, 0.623) 0%, rgba(224, 214, 179, 0.808) 75%),
                 linear-gradient(rgba(224, 219, 202, 0.13), rgba(240, 239, 235, 0.95)),
+=======
+    background: radial-gradient(circle at center, rgba(214, 40, 40, 0.2) 0%, rgba(10, 10, 12, 1) 75%),
+                linear-gradient(rgba(10,10,12,0.5), rgba(10,10,12,1)),
+>>>>>>> 93825263928c75bd23c1754f8c12f107d4240755
                 url('https://images.unsplash.com/photo-1513104890138-7c749659a591?q=80&w=1200') center/cover no-repeat;
     display: flex;
     align-items: center;
@@ -140,7 +167,11 @@ body {
 .category-nav {
     position: sticky;
     top: 56px;
+<<<<<<< HEAD
     background: rgba(246, 239, 225, 0.98);
+=======
+    background: rgba(18, 18, 18, 0.98);
+>>>>>>> 93825263928c75bd23c1754f8c12f107d4240755
     backdrop-filter: blur(10px);
     -webkit-backdrop-filter: blur(10px);
     padding: 10px 12px;
@@ -231,7 +262,11 @@ body {
     display: flex;
     flex-direction: column;
     justify-content: space-between;
+<<<<<<< HEAD
     box-shadow: 0 2px 6px rgba(90, 74, 46, 0.12);
+=======
+    box-shadow: 0 2px 6px rgba(0,0,0,0.2);
+>>>>>>> 93825263928c75bd23c1754f8c12f107d4240755
 }
 
 .card-header-info {
@@ -245,12 +280,20 @@ body {
 .card-title {
     font-weight: 700;
     font-size: 0.95rem;
+<<<<<<< HEAD
     color: var(--text-main);
+=======
+    color: #fff;
+>>>>>>> 93825263928c75bd23c1754f8c12f107d4240755
     line-height: 1.3;
 }
 
 .card-num {
+<<<<<<< HEAD
     background:  #E0DBCA;
+=======
+    background: #2a2a2e;
+>>>>>>> 93825263928c75bd23c1754f8c12f107d4240755
     font-size: 0.68rem;
     padding: 2px 6px;
     border-radius: 4px;
@@ -282,7 +325,11 @@ body {
 
 .card-price {
     font-weight: 800;
+<<<<<<< HEAD
     color: var(--text-main);
+=======
+    color: #fff;
+>>>>>>> 93825263928c75bd23c1754f8c12f107d4240755
     font-size: 1rem;
 }
 
@@ -328,7 +375,11 @@ body {
 }
 
 .modal {
+<<<<<<< HEAD
     background: #f6efe1;
+=======
+    background: #18181a;
+>>>>>>> 93825263928c75bd23c1754f8c12f107d4240755
     border: 1px solid var(--border);
     width: 100%;
     max-width: 500px;
@@ -501,7 +552,11 @@ body {
     width: 100%;
     max-width: 420px;
     height: 100%;
+<<<<<<< HEAD
     background: #f6efe1;
+=======
+    background: #161618;
+>>>>>>> 93825263928c75bd23c1754f8c12f107d4240755
     z-index: 3000;
     transition: right 0.3s cubic-bezier(0.16, 1, 0.3, 1);
     display: flex;
@@ -516,13 +571,21 @@ body {
     display: flex;
     justify-content: space-between;
     align-items: center;
+<<<<<<< HEAD
     background: #E0DBCA;
+=======
+    background: #1c1c1e;
+>>>>>>> 93825263928c75bd23c1754f8c12f107d4240755
 }
 
 .cart-header h3 { font-size: 1.1rem; }
 
 .cart-close {
+<<<<<<< HEAD
     background: #948f7e;
+=======
+    background: #28282e;
+>>>>>>> 93825263928c75bd23c1754f8c12f107d4240755
     border: none;
     color: #fff;
     width: 32px; height: 32px;
@@ -565,7 +628,11 @@ body {
 .cart-footer {
     padding: 14px;
     border-top: 1px solid var(--border);
+<<<<<<< HEAD
     background: #E0DBCA;
+=======
+    background: #111113;
+>>>>>>> 93825263928c75bd23c1754f8c12f107d4240755
 }
 
 .cart-total-row {
@@ -587,7 +654,11 @@ body {
 
 .checkout-form input, .checkout-form select {
     width: 100%;
+<<<<<<< HEAD
     background: #fffae3;
+=======
+    background: #1c1c1e;
+>>>>>>> 93825263928c75bd23c1754f8c12f107d4240755
     border: 1px solid var(--border);
     color: #fff;
     padding: 11px 12px;
@@ -600,7 +671,11 @@ body {
 .mobile-bottom-bar {
     position: fixed;
     bottom: 0; left: 0; right: 0;
+<<<<<<< HEAD
     background: #c9c0a7;
+=======
+    background: rgba(24, 24, 26, 0.96);
+>>>>>>> 93825263928c75bd23c1754f8c12f107d4240755
     backdrop-filter: blur(12px);
     -webkit-backdrop-filter: blur(12px);
     border-top: 1px solid var(--border);

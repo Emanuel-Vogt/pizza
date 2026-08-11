@@ -23,6 +23,7 @@ const defaultProducts = [
     { id: 15, num: "05", category: "pizzas-doces", type: "pizza", pizzaType: "doce", name: "Cookies & Cream", desc: "Chocolate branco, Oreo triturado e leite em pó.", prices: { size25: 65, size35: 90, size30x50: 155 } },
 
     // XIS ARTESANAIS 18cm
+<<<<<<< HEAD
     { id: 16, num: "01", category: "xis-artesanais", type: "single", name: "X Salada", desc: "Hambúrguer artesanal de coxão mole, ovo frito, mussarela, alface, tomate, milho, ervilha, maionese, ketchup.", price: 30 },
     { id: 17, num: "02", category: "xis-artesanais", type: "single", name: "X Frango", desc: "Filé de frango, ovo frito, mussarela, alface, tomate, milho, ervilha, maionese, ketchup.", price: 32 },
     { id: 18, num: "03", category: "xis-artesanais", type: "single", name: "X Calabresa", desc: "Hambúrguer artesanal de coxão mole, calabresa fatiada, ovo frito, mussarela, alface, tomate, milho, ervilha, maionese, ketchup.", price: 35 },
@@ -39,6 +40,23 @@ const defaultProducts = [
     { id: 26, num: "03", category: "xis-calota", type: "single", name: "X Calota Calabresa", desc: "Pão de 30cm, hambúrguer artesanal de coxão mole, calabresa fatiada, ovo frito, mussarela, alface, tomate, milho, ervilha, maionese e ketchup.", price: 95 },
     { id: 27, num: "04", category: "xis-calota", type: "single", name: "X Calota Bacon", desc: "Pão de 30cm, hambúrguer artesanal de coxão mole, bacon, ovo frito, mussarela, alface, tomate, milho, ervilha, maionese e ketchup.", price: 95 },
     { id: 28, num: "05", category: "xis-calota", type: "single", name: "X Calota Tudo", desc: "Pão de 30cm, hambúrguer artesanal de coxão mole, filé de frango, bacon, calabresa, presunto, ovo frito, mussarela, alface, tomate, milho, ervilha, maionese e ketchup.", price: 110 },
+=======
+    { id: 16, num: "01", category: "xis-artesanais", type: "single", name: "X Salada", desc: "Hambúrguer artesanal de acém bovino, ovo frito, mussarela, alface, tomate, milho, ervilha, maionese, ketchup e mostarda.", price: 30 },
+    { id: 17, num: "02", category: "xis-artesanais", type: "single", name: "X Frango", desc: "Filé de frango, ovo frito, mussarela, alface, tomate, milho, ervilha, maionese, ketchup e mostarda.", price: 32 },
+    { id: 18, num: "03", category: "xis-artesanais", type: "single", name: "X Calabresa", desc: "Hambúrguer artesanal de acém bovino, calabresa fatiada, ovo frito, mussarela, alface, tomate, milho, ervilha, maionese, ketchup e mostarda.", price: 35 },
+    { id: 19, num: "04", category: "xis-artesanais", type: "single", name: "X Bacon", desc: "Hambúrguer artesanal de acém bovino, bacon, ovo frito, mussarela, alface, tomate, milho, ervilha, maionese, ketchup e mostarda.", price: 35 },
+    { id: 20, num: "05", category: "xis-artesanais", type: "single", name: "X Costela", desc: "Hambúrguer artesanal de acém bovino, costela desfiada, cheddar cremoso, ovo frito, mussarela, alface, tomate, milho, ervilha, maionese, ketchup e mostarda.", price: 40 },
+    { id: 21, num: "06", category: "xis-artesanais", type: "single", name: "X Frango Especial", desc: "Filé de frango, bacon, cheddar cremoso, Catupiry, ovo frito, mussarela, alface, tomate, milho, ervilha, maionese, ketchup e mostarda.", price: 40 },
+    { id: 22, num: "07", category: "xis-artesanais", type: "single", name: "X Tudo", desc: "Hambúrguer artesanal de acém bovino, filé de frango, bacon, calabresa, presunto, cheddar cremoso, ovo frito, mussarela, alface, tomate, milho, ervilha, maionese, ketchup e mostarda.", price: 45 },
+    { id: 23, num: "08", category: "xis-artesanais", type: "single", name: "X Maná Especial", desc: "2 hambúrgueres artesanais de acém bovino, bacon crocante, cheddar cremoso, Catupiry, cebola caramelizada, ovo frito, mussarela, alface, tomate, milho, ervilha, maionese, ketchup e mostarda.", price: 48 },
+
+    // XIS CALOTA 30cm
+    { id: 24, num: "01", category: "xis-calota", type: "single", name: "X Calota Salada", desc: "Pão de 30cm, hambúrguer artesanal de acém bovino, ovo frito, mussarela, alface, tomate, milho, ervilha, maionese e ketchup.", price: 85 },
+    { id: 25, num: "02", category: "xis-calota", type: "single", name: "X Calota Frango", desc: "Pão de 30cm, filé de frango, ovo frito, mussarela, alface, tomate, milho, ervilha, maionese e ketchup.", price: 85 },
+    { id: 26, num: "03", category: "xis-calota", type: "single", name: "X Calota Calabresa", desc: "Pão de 30cm, hambúrguer artesanal de acém bovino, calabresa fatiada, ovo frito, mussarela, alface, tomate, milho, ervilha, maionese e ketchup.", price: 95 },
+    { id: 27, num: "04", category: "xis-calota", type: "single", name: "X Calota Bacon", desc: "Pão de 30cm, hambúrguer artesanal de acém bovino, bacon, ovo frito, mussarela, alface, tomate, milho, ervilha, maionese e ketchup.", price: 95 },
+    { id: 28, num: "05", category: "xis-calota", type: "single", name: "X Calota Tudo", desc: "Pão de 30cm, hambúrguer artesanal de acém bovino, filé de frango, bacon, calabresa, presunto, ovo frito, mussarela, alface, tomate, milho, ervilha, maionese e ketchup.", price: 110 },
+>>>>>>> 93825263928c75bd23c1754f8c12f107d4240755
 
     // PORÇÕES E BEBIDAS
     { id: 29, num: "", category: "porcoes", type: "single", name: "Batata Frita 400g", desc: "Porção de batata frita crocante (400g).", price: 20 },
@@ -55,7 +73,11 @@ const categoriesMeta = [
     { key: "pizzas-salgadas", label: "🍕 Pizzas Salgadas", sub: "Todas acompanham Borda Recheada!" },
     { key: "monte-sua-pizza", label: "🍕 Monte Sua Pizza", sub: "Escolha até 4 sabores diretamente!" },
     { key: "pizzas-doces", label: "🍫 Pizzas Doces", sub: "Com Bordas Doces Especiais!" },
+<<<<<<< HEAD
     { key: "xis-artesanais", label: "🍔 Xis Artesanais (18cm)", sub: "Hambúrguer 100% Coxão Mole" },
+=======
+    { key: "xis-artesanais", label: "🍔 Xis Artesanais (18cm)", sub: "Hambúrguer 100% Acém Bovino" },
+>>>>>>> 93825263928c75bd23c1754f8c12f107d4240755
     { key: "xis-calota", label: "👑 Xis Calota (30cm)", sub: "Mais Recheio, Mais Sabor!" },
     { key: "porcoes", label: "🍟 Porções", sub: "" },
     { key: "bebidas", label: "🥤 Bebidas", sub: "" }
