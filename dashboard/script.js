@@ -202,7 +202,7 @@ function renderMenu() {
                             <span class="card-price-label">${p.type === 'pizza' ? 'Inicial' : 'Valor'}</span>
                             <div class="card-price">${priceText}</div>
                         </div>
-                        <button class="btn-primary" onclick="openModal(${p.id})">${p.isCustom ? 'Montar Pizza' : 'Adicionar'}</button>
+                        <button class="btn-primary" onclick="openModal(${p.id})">${p.category === 'monte-sua-pizza' ? 'Montar Pizza' : 'Adicionar'}</button>
                     </div>
                 `;
                 grid.appendChild(card);
@@ -244,18 +244,18 @@ function openModal(productId) {
 
         // 2. Se for "Monte Sua Pizza", exibe o Seletor de Sabores por Checkbox
         let flavorHTML = '';
-        if (currentProduct.isCustom) {
+        if (currentProduct.category === 'monte-sua-pizza') {
             flavorHTML = renderFlavorPicker();
         }
 
         // 3. Borda
-        const bordaLabel = currentProduct.isCustom ? '3.' : '2.';
-        const bordaTitle = currentProduct.isCustom ? 'Escolha até 2 Bordas Recheadas:' : 'Borda Recheada Inclusa:';
+        const bordaLabel = currentProduct.category === 'monte-sua-pizza' ? '3.' : '2.';
+        const bordaTitle = currentProduct.category === 'monte-sua-pizza' ? 'Escolha até 2 Bordas Recheadas:' : 'Borda Recheada Inclusa:';
         let bordaHTML = `<div class="modal-group"><h4>${bordaLabel} ${bordaTitle}</h4>`;
         bordaList.forEach((b, idx) => {
             bordaHTML += `
                 <button class="option-btn ${selectedBordas.includes(b) ? 'selected' : ''}" onclick="selectBorda('${b}', this)">
-                    <span>${currentProduct.isCustom ? b : `Borda de ${b}`}</span>
+                    <span>${currentProduct.category === 'monte-sua-pizza' ? b : `Borda de ${b}`}</span>
                     <small style="color:#25d366;font-weight:700;">Grátis</small>
                 </button>
             `;
@@ -269,7 +269,7 @@ function openModal(productId) {
     document.getElementById('modal-overlay').classList.add('active');
 
     document.getElementById('btn-add-modal').onclick = () => {
-        if (currentProduct.isCustom && selectedFlavors.length === 0) {
+        if (currentProduct.category === 'monte-sua-pizza' && selectedFlavors.length === 0) {
             alert('Por favor, selecione pelo menos 1 sabor para a sua pizza!');
             return;
         }
@@ -280,9 +280,9 @@ function openModal(productId) {
 
 // Renderiza a lista de Sabores disponíveis
 function renderFlavorPicker() {
-    const allowSweetFlavors = currentProduct.isCustom;
+    const allowSweetFlavors = currentProduct.category === 'monte-sua-pizza';
     const availableFlavors = products.filter(p => {
-        if (p.isCustom) return false;
+        if (p.category === 'monte-sua-pizza') return false;
         if (currentProduct.pizzaType === 'doce') return p.category === 'pizzas-doces';
         return p.category === 'pizzas-salgadas' || (allowSweetFlavors && p.category === 'pizzas-doces');
     });
@@ -339,7 +339,7 @@ function selectSize(key, btn) {
     btn.parentElement.querySelectorAll('.option-btn').forEach(b => b.classList.remove('selected'));
     btn.classList.add('selected');
 
-    if (currentProduct && currentProduct.isCustom) {
+    if (currentProduct && currentProduct.category === 'monte-sua-pizza') {
         const sizeObj = pizzaSizes.find(s => s.key === selectedSizeKey);
         const max = sizeObj ? sizeObj.maxFlavors : 2;
 
@@ -405,7 +405,7 @@ function addToCart() {
         const szLabel = sz.label.split(' ')[0];
         const bordaText = selectedBordas.length > 1 ? `Bordas: ${selectedBordas.join(' + ')}` : `Borda: ${selectedBordas[0] || ''}`;
         
-        if (currentProduct.isCustom && selectedFlavors.length > 0) {
+        if (currentProduct.category === 'monte-sua-pizza' && selectedFlavors.length > 0) {
             details = `${szLabel}, Sabores: ${selectedFlavors.join(' + ')}, ${bordaText}`;
         } else {
             details = `${szLabel}, ${bordaText}`;
