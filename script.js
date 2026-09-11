@@ -70,15 +70,55 @@ const pizzaSizes = [
 const bordasSalgadas = ["Cheddar", "Catupiry"];
 const bordasDoces = ["Doce de Leite", "Chocolate Branco", "Creme de Avelã com Chocolate"];
 
-// Estado Global
-let products = defaultProducts;
+let products = [];
 let cart = [];
 let currentProduct = null;
 let selectedSizeKey = "size25";
 let selectedBordas = [];
 let selectedFlavors = [];
 
-document.addEventListener('DOMContentLoaded', () => {
+function fromDatabase(p) {
+    return {
+        id: Number(p.id),
+        num: p.num || "",
+        category: p.category,
+        type: p.type,
+        pizzaType: p.pizza_type || null,
+        isCustom: Boolean(p.is_custom),
+        name: p.name,
+        desc: p.description || "",
+        price: p.price === null ? null : Number(p.price),
+        prices: {
+            size25: Number(p.price_25 || 0),
+            size35: Number(p.price_35 || 0),
+            size30x50: Number(p.price_30x50 || 0)
+        }
+    };
+}
+
+document.addEventListener('DOMContentLoaded', async () => {
+    const container = document.getElementById('dynamic-sections');
+
+    const { data, error } = await supabaseClient
+        .from('products')
+        .select('*')
+        .eq('available', true)
+        .order('sort_order', { ascending: true })
+        .order('id', { ascending: true });
+
+    if (error) {
+        console.error('Erro ao carregar cardápio:', error);
+
+        container.innerHTML = `
+            <p style="padding:20px;text-align:center">
+                Não foi possível carregar o cardápio.
+            </p>
+        `;
+        return;
+    }
+
+    products = (data || []).map(fromDatabase);
+
     initApp();
 });
 
