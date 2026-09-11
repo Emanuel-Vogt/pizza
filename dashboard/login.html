@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+
+<head>
+    <meta charset="UTF-8">
+
+    <meta
+        name="viewport"
+        content="width=device-width, initial-scale=1.0"
+    >
+
+    <title>Login | Maná Pizza X</title>
+
+    <link
+        rel="stylesheet"
+        href="login.css"
+    >
+</head>
+
+<body>
+
+    <main class="form card">
+
+        <div class="login-header">
+
+            <div class="pizza-icon">
+                
+            </div>
+
+            <h1>
+                Área Administrativa
+            </h1>
+
+            <p>
+                Entre para gerenciar o cardápio.
+            </p>
+
+        </div>
+
+
+        <form id="login-form">
+
+            <input
+                type="email"
+                id="username"
+                class="form input"
+                placeholder="Seu email"
+                autocomplete="email"
+                required
+            >
+
+
+            <input
+                type="password"
+                id="password"
+                class="form input"
+                placeholder="Sua senha"
+                autocomplete="current-password"
+                required
+            >
+
+
+            <div
+                id="login-error"
+                class="login-error"
+                aria-live="polite"
+            ></div>
+
+
+            <button
+                type="submit"
+                class="form button"
+            >
+                Entrar
+            </button>
+
+        </form>
+
+    </main>
+
+
+    <script src="https://cdn.jsdelivr.net/npm/@supabase/supabase-js@2"></script>
+
+    <script src="supabase.js"></script>
+
+    <script src="login.js"></script>
+    
+</body>
+
+</html>
